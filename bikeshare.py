@@ -153,7 +153,7 @@ def time_convert(seconds):
     '''
     # converts seconds to a float as some of the csv files have the duration and ints
     seconds = float(seconds)
-    # converts time to more user friendly format
+    # converts time to more user-friendly format
     time = datetime.timedelta(seconds=seconds)
 
     return time
@@ -229,7 +229,7 @@ def show_data(df):
     line_count = 0
     while True:
         print(df.iloc[line_count:line_count + 5])
-        see_data = input('\nWould you like to see 5 more lines of raw data?\n')
+        see_data = input('\nWould you like to see 5 more lines of raw data? Enter yes or no.\n')
         if see_data.lower() not in ['yes', 'y']:
             break
         else:
@@ -245,7 +245,7 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
 
-        see_data = input('\nWould you like to see 5 lines of raw data?\n')
+        see_data = input('\nWould you like to see 5 lines of raw data? Enter yes or no.\n')
         if see_data.lower() in ['yes', 'y']:
             show_data(df)
 
