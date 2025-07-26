@@ -229,7 +229,7 @@ def show_data(df):
     line_count = 0
     while True:
         print(df.iloc[line_count:line_count + 5])
-        see_data = input('\nWould you like to see 5 more lines of raw data?\n')
+        see_data = input('\nWould you like to see 5 more lines of raw data? Enter yes or no.\n')
         if see_data.lower() not in ['yes', 'y']:
             break
         else:
