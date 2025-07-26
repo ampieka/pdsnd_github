@@ -153,7 +153,7 @@ def time_convert(seconds):
     '''
     # converts seconds to a float as some of the csv files have the duration and ints
     seconds = float(seconds)
-    # converts time to more user friendly format
+    # converts time to more user-friendly format
     time = datetime.timedelta(seconds=seconds)
 
     return time
