@@ -245,7 +245,7 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
 
-        see_data = input('\nWould you like to see 5 lines of raw data?\n')
+        see_data = input('\nWould you like to see 5 lines of raw data? Enter yes or no.\n')
         if see_data.lower() in ['yes', 'y']:
             show_data(df)
 
